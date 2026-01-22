@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gijun Store | Cosmetics & Daily Essentials</title>
+  <meta name="description" content="Gijun Store — Korean, French & Italian cosmetics and daily essentials. Starting in Ankara, expanding nationwide." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left clamp">
+        <span class="badge" id="topBadge">Ankara • First Store Launch</span>
+        <span class="muted tiny clamp" id="topNote">Korean • French • Italian brands + daily essentials</span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:10px">
+        <!-- Theme -->
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Theme">
+          🌙
+        </button>
+
+        <!-- Language -->
+        <div class="lang" id="langWrap">
+          <button class="lang-btn" id="langBtn" aria-haspopup="menu" aria-expanded="false">
+            🌐 <span id="langLabel">English</span> ▾
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" aria-label="Language menu">
+            <button type="button" data-lang="en" role="menuitem">English</button>
+            <button type="button" data-lang="tr" role="menuitem">Türkçe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Gijun Store home">
+        <div class="logo-mark">G</div>
+        <div class="logo-text">GIJUN STORE</div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#brands" data-i18n="nav_brands">Brands</a>
+        <a href="#ankara" data-i18n="nav_ankara">Ankara</a>
+        <a href="#b2b" data-i18n="nav_b2b">B2B</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu">☰</button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#brands" data-i18n="nav_brands">Brands</a>
+      <a href="#ankara" data-i18n="nav_ankara">Ankara</a>
+      <a href="#b2b" data-i18n="nav_b2b">B2B</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-kicker">
+              <div class="kicker-dot"></div>
+              <div class="muted" id="heroKicker" data-i18n="hero_kicker">
+                Premium cosmetics & daily essentials — starting in Ankara.
+              </div>
+            </div>
+
+            <h1 data-i18n="hero_title">K-Beauty & Global Brands,<br/>curated for everyday life.</h1>
+
+            <p class="lead muted" data-i18n="hero_lead">
+              Gijun Store brings together Korean, French, and Italian cosmetics — plus carefully selected daily essentials.
+              We start in Ankara and expand step-by-step across Türkiye.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#contact" data-i18n="hero_cta1">Get store updates</a>
+              <a class="btn secondary" href="#brands" data-i18n="hero_cta2">Explore categories</a>
+              <button class="btn ghost" id="catalogBtn" type="button" data-i18n="hero_cta3">Request a catalog</button>
+            </div>
+
+            <div class="hero-pills">
+              <div class="pill" data-i18n="pill_1">Verified products</div>
+              <div class="pill" data-i18n="pill_2">Fair pricing</div>
+              <div class="pill" data-i18n="pill_3">Fast restocks</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-card-title" data-i18n="side_title">What we offer</div>
+
+            <div class="hero-card-list">
+              <div class="mini">
+                <div class="mini-k" data-i18n="side_1_k">Cosmetics</div>
+                <div class="mini-v" data-i18n="side_1_v">Skincare, makeup, fragrance — Korean + EU lines.</div>
+              </div>
+              <div class="mini">
+                <div class="mini-k" data-i18n="side_2_k">Daily essentials</div>
+                <div class="mini-v" data-i18n="side_2_v">Household items, personal care, travel-size basics.</div>
+              </div>
+              <div class="mini">
+                <div class="mini-k" data-i18n="side_3_k">Community store</div>
+                <div class="mini-v" data-i18n="side_3_v">A friendly local shop — expanding to new cities.</div>
+              </div>
+            </div>
+
+            <div class="hero-card-footer tiny muted" data-i18n="side_footer">
+              * Product lineup may vary by availability and compliance requirements.
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Strip -->
+    <section class="strip">
+      <div class="container strip-inner">
+        <div class="strip-item">
+          <div class="strip-k" data-i18n="strip_1_k">Launch city</div>
+          <div class="strip-v muted" data-i18n="strip_1_v">Ankara</div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-k" data-i18n="strip_2_k">Core categories</div>
+          <div class="strip-v muted" data-i18n="strip_2_v">Cosmetics + daily essentials</div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-k" data-i18n="strip_3_k">Future plan</div>
+          <div class="strip-v muted" data-i18n="strip_3_v">Expand to Istanbul and beyond</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="about_title">About Gijun Store</h2>
+          <p class="muted" data-i18n="about_sub">
+            A modern neighborhood store model — inspired by chains like Gratis, but curated with Korean & EU brands.
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3 data-i18n="about_c1_t">Curated selection</h3>
+            <p data-i18n="about_c1_p">We focus on quality, authenticity, and practical daily use.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="about_c2_t">Transparent sourcing</h3>
+            <p data-i18n="about_c2_p">We work toward reliable import channels and compliant product listings.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="about_c3_t">Made for Ankara</h3>
+            <p data-i18n="about_c3_p">First store in Ankara — built to scale into a multi-city chain.</p>
+          </div>
+        </div>
+
+        <div class="mini-banner">
+          <div>
+            <div class="mini-banner-k" data-i18n="about_banner_k">Want early access to new arrivals?</div>
+            <div class="mini-banner-v muted" data-i18n="about_banner_v">Leave a message and we’ll notify you when the store opens.</div>
+          </div>
+          <a class="btn small" href="#contact" data-i18n="about_banner_btn">Notify me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="section alt" id="brands">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="brands_title">Brands & categories</h2>
+          <p class="muted" data-i18n="brands_sub">
+            Korean, French, and Italian cosmetics — plus daily essentials for home & travel.
+          </p>
+        </div>
+
+        <div class="brand-row">
+          <div class="brand-pill">
+            <div class="flag">🇰🇷</div>
+            <div>
+              <div class="brand-k" data-i18n="brands_k1">Korean</div>
+              <div class="muted" data-i18n="brands_v1">Skincare routines, sun care, cushion makeup, hair care.</div>
+              <ul class="list">
+                <li data-i18n="brands_l1">Cleansers / toners / serums</li>
+                <li data-i18n="brands_l2">SPF & sensitive-skin lines</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="brand-pill">
+            <div class="flag">🇫🇷</div>
+            <div>
+              <div class="brand-k" data-i18n="brands_k2">French</div>
+              <div class="muted" data-i18n="brands_v2">Dermocosmetics, fragrance, pharmacy-style essentials.</div>
+              <ul class="list">
+                <li data-i18n="brands_l3">Moisturizers & barrier care</li>
+                <li data-i18n="brands_l4">Fragrance & body care</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="brand-pill">
+            <div class="flag">🇮🇹</div>
+            <div>
+              <div class="brand-k" data-i18n="brands_k3">Italian</div>
+              <div class="muted" data-i18n="brands_v3">Beauty & lifestyle items with clean design and quality.</div>
+              <ul class="list">
+                <li data-i18n="brands_l5">Makeup & accessories</li>
+                <li data-i18n="brands_l6">Daily essentials</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted note" data-i18n="brands_note">
+          Tip: We can also source requested items if they’re legally importable and available.
+        </p>
+      </div>
+    </section>
+
+    <!-- Ankara -->
+    <section class="section" id="ankara">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="ank_title">Ankara launch plan</h2>
+          <p class="muted" data-i18n="ank_sub">A simple timeline for opening the first base store.</p>
+        </div>
+
+        <div class="ank-grid">
+          <div class="tile">
+            <div class="tile-top">
+              <div class="tile-icon">📍</div>
+              <h3 data-i18n="ank_t1">Location & concept</h3>
+            </div>
+            <p data-i18n="ank_p1">A compact store with best-sellers, seasonal bundles, and fast rotation.</p>
+            <div class="tag-row">
+              <span class="tag" data-i18n="ank_tag1">Neighborhood</span>
+              <span class="tag" data-i18n="ank_tag2">Curated</span>
+              <span class="tag" data-i18n="ank_tag3">Affordable-premium</span>
+            </div>
+          </div>
+
+          <div class="tile">
+            <div class="tile-top">
+              <div class="tile-icon">🧾</div>
+              <h3 data-i18n="ank_t2">Product lineup</h3>
+            </div>
+            <p data-i18n="ank_p2">Cosmetics + household essentials, grouped by needs (daily, travel, gifts).</p>
+            <ul class="list">
+              <li data-i18n="ank_li1">Skincare basics + SPF</li>
+              <li data-i18n="ank_li2">Makeup staples + tools</li>
+              <li data-i18n="ank_li3">Household & hygiene</li>
+            </ul>
+          </div>
+
+          <div class="tile">
+            <div class="tile-top">
+              <div class="tile-icon">🗓️</div>
+              <h3 data-i18n="ank_t3">Step-by-step</h3>
+            </div>
+            <ul class="timeline">
+              <li>
+                <div class="t-dot"></div>
+                <div>
+                  <div class="t-k" data-i18n="ank_s1k">Step 1</div>
+                  <div class="t-v muted" data-i18n="ank_s1v">Finalize product list & suppliers</div>
+                </div>
+              </li>
+              <li>
+                <div class="t-dot"></div>
+                <div>
+                  <div class="t-k" data-i18n="ank_s2k">Step 2</div>
+                  <div class="t-v muted" data-i18n="ank_s2v">Branding, signage, and opening campaign</div>
+                </div>
+              </li>
+              <li>
+                <div class="t-dot"></div>
+                <div>
+                  <div class="t-k" data-i18n="ank_s3k">Step 3</div>
+                  <div class="t-v muted" data-i18n="ank_s3v">Soft opening + feedback loop</div>
+                </div>
+              </li>
+              <li>
+                <div class="t-dot"></div>
+                <div>
+                  <div class="t-k" data-i18n="ank_s4k">Step 4</div>
+                  <div class="t-v muted" data-i18n="ank_s4v">Scale to new cities (Istanbul next)</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B2B -->
+    <section class="section alt" id="b2b">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="b2b_title">B2B / wholesale</h2>
+          <p class="muted" data-i18n="b2b_sub">For salons, small shops, and partners who want consistent supply.</p>
+        </div>
+
+        <div class="b2b-grid">
+          <div class="card">
+            <h3 data-i18n="b2b_c1_t">For partners</h3>
+            <p data-i18n="b2b_c1_p">Wholesale pricing for repeat orders and verified product lists.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="b2b_c2_t">For resellers</h3>
+            <p data-i18n="b2b_c2_p">Starter bundles and category packs (skincare, makeup, essentials).</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="b2b_c3_t">For events</h3>
+            <p data-i18n="b2b_c3_p">Gift sets and curated boxes for corporate or community events.</p>
+          </div>
+        </div>
+
+        <div class="mini-banner">
+          <div>
+            <div class="mini-banner-k" data-i18n="b2b_banner_k">Need a quotation?</div>
+            <div class="mini-banner-v muted" data-i18n="b2b_banner_v">Send your category list and expected volume.</div>
+          </div>
+          <a class="btn small" href="#contact" data-i18n="b2b_banner_btn">Contact for B2B</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="contact_title">Contact</h2>
+          <p class="muted" data-i18n="contact_sub">
+            Tell us what you want — store updates, product requests, or B2B inquiries.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <h3 data-i18n="contact_info_t">Store info</h3>
+            <p class="muted" data-i18n="contact_info_p">We’re opening in Ankara first. Expansion to Istanbul is planned.</p>
+
+            <div class="contact-lines">
+              <div><span class="k" data-i18n="contact_k1">Email</span> <span class="v">ipec841@gmail.com</span></div>
+              <div><span class="k" data-i18n="contact_k2">City</span> <span class="v" data-i18n="contact_city">Ankara, Türkiye</span></div>
+              <div><span class="k" data-i18n="contact_k3">Hours</span> <span class="v" data-i18n="contact_hours">Coming soon</span></div>
+            </div>
+
+            <div class="callout">
+              <div class="callout-k" data-i18n="contact_callout_k">Quick note</div>
+              <div class="muted" data-i18n="contact_callout_v">We only list items we can source responsibly and legally.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="contact_form_t">Send a message</h3>
+            <form class="form" id="contactForm">
+              <label>
+                <span data-i18n="form_name">Your name</span>
+                <input type="text" name="name" required />
+              </label>
+
+              <label>
+                <span data-i18n="form_type">Inquiry type</span>
+                <select name="type" required>
+                  <option value="updates" data-i18n="form_opt1">Store updates</option>
+                  <option value="product" data-i18n="form_opt2">Product request</option>
+                  <option value="b2b" data-i18n="form_opt3">B2B / wholesale</option>
+                </select>
+              </label>
+
+              <label>
+                <span data-i18n="form_msg">Message</span>
+                <textarea name="message" rows="5" placeholder="Write here..." required></textarea>
+              </label>
+
+              <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px">
+                <button class="btn" type="submit" data-i18n="form_send">Send</button>
+                <button class="btn secondary" type="button" id="copyEmailBtn" data-i18n="form_copy">Copy email</button>
+              </div>
+
+              <p class="tiny muted" style="margin-top:10px" data-i18n="form_note">
+                This form opens your email app (mailto). You can also copy the email and send manually.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a class="logo small" href="#home">
+          <div class="logo-mark">G</div>
+          <div class="logo-text">GIJUN STORE</div>
+        </a>
+        <p class="muted" data-i18n="footer_p">
+          Premium cosmetics & daily essentials. Starting in Ankara, expanding across Türkiye.
+        </p>
+        <p class="tiny muted">© <span id="year"></span> Gijun Store. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <a class="muted" href="#about" data-i18n="nav_about">About</a>
+        <a class="muted" href="#brands" data-i18n="nav_brands">Brands</a>
+        <a class="muted" href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
