@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Gijun Store | Global Beauty & Daily Select</title>
-  <meta name="description" content="Premium K-Beauty, European brands & daily essentials. Starting in Ankara."/>
+  <title>GIJUN STORE | Global Beauty & Daily Select</title>
+  <meta name="description" content="Premium K-Beauty and European brands. Curated daily essentials. Starting in Ankara."/>
   <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
@@ -34,13 +34,14 @@
 <header class="header">
   <div class="container header-inner">
     <div class="logo">
-      <img src="logo.png" alt="Gijun Store Logo"/>
+      <!-- 로고 파일명만 맞춰서 넣어 -->
+      <img src="logo.png" alt="GIJUN STORE"/>
       <span>GIJUN STORE</span>
     </div>
     <nav class="nav">
       <a href="#categories" data-i18n="nav_categories"></a>
       <a href="#featured" data-i18n="nav_featured"></a>
-      <a href="#about" data-i18n="nav_about"></a>
+      <a href="#brands" data-i18n="nav_brands"></a>
       <a href="#contact" class="cta" data-i18n="nav_contact"></a>
     </nav>
   </div>
@@ -52,7 +53,6 @@
     <span class="kicker" data-i18n="hero_kicker"></span>
     <h1 data-i18n="hero_title"></h1>
     <p data-i18n="hero_desc"></p>
-
     <div class="hero-actions">
       <a href="#featured" class="btn gold" data-i18n="hero_cta1"></a>
       <a href="#categories" class="btn outline" data-i18n="hero_cta2"></a>
@@ -60,12 +60,21 @@
   </div>
 </section>
 
-<!-- HIGHLIGHTS -->
-<section class="highlights">
-  <div class="container highlight-grid">
-    <div><strong data-i18n="h1_t"></strong><span data-i18n="h1_d"></span></div>
-    <div><strong data-i18n="h2_t"></strong><span data-i18n="h2_d"></span></div>
-    <div><strong data-i18n="h3_t"></strong><span data-i18n="h3_d"></span></div>
+<!-- TRUST / VALUE -->
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-card">
+      <strong data-i18n="t1_t"></strong>
+      <span data-i18n="t1_d"></span>
+    </div>
+    <div class="trust-card">
+      <strong data-i18n="t2_t"></strong>
+      <span data-i18n="t2_d"></span>
+    </div>
+    <div class="trust-card">
+      <strong data-i18n="t3_t"></strong>
+      <span data-i18n="t3_d"></span>
+    </div>
   </div>
 </section>
 
@@ -89,10 +98,30 @@
   <div class="container">
     <h2 data-i18n="feat_title"></h2>
     <div class="featured-grid">
-      <div class="product">✨<span data-i18n="feat1"></span></div>
-      <div class="product">🌍<span data-i18n="feat2"></span></div>
-      <div class="product">💎<span data-i18n="feat3"></span></div>
+      <div class="product">
+        <div class="p-badge">BEST</div>
+        <span data-i18n="feat1"></span>
+      </div>
+      <div class="product">
+        <div class="p-badge">GLOBAL</div>
+        <span data-i18n="feat2"></span>
+      </div>
+      <div class="product">
+        <div class="p-badge">LIMITED</div>
+        <span data-i18n="feat3"></span>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- BRANDS STRIP -->
+<section id="brands" class="brands">
+  <div class="container brands-inner">
+    <span>KOREA</span>
+    <span>FRANCE</span>
+    <span>ITALY</span>
+    <span>GLOBAL SELECT</span>
+    <span>PREMIUM</span>
   </div>
 </section>
 
@@ -112,3 +141,4 @@
 <script src="./app.js"></script>
 </body>
 </html>
+
