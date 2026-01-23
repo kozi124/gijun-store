@@ -1,30 +1,29 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gijun Store | K-Beauty & Daily Essentials</title>
-  <meta name="description" content="K-Beauty ve global kozmetik & günlük ihtiyaçlar. Ankara’dan başlıyoruz." />
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Gijun Store | Global Beauty & Daily Select</title>
+  <meta name="description" content="Premium K-Beauty, European brands & daily essentials. Starting in Ankara."/>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
-
 <body>
 
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="container topbar-inner">
     <div class="top-left">
-      <span class="badge" id="topBadge">Ankara • İlk Mağaza Açılışı</span>
-      <span class="note" id="topNote">Kore · Fransa · İtalya markaları + günlük ihtiyaçlar</span>
+      <span class="badge" data-i18n="top_badge"></span>
+      <span class="note" data-i18n="top_note"></span>
     </div>
     <div class="top-right">
       <div class="lang" id="langWrap">
         <button class="lang-btn" id="langBtn">
-          🌐 <span id="langLabel">Türkçe</span> ▾
+          🌐 <span id="langLabel"></span> ▾
         </button>
         <div class="lang-menu" id="langMenu">
-          <button data-lang="tr">Türkçe</button>
           <button data-lang="en">English</button>
+          <button data-lang="tr">Türkçe</button>
         </div>
       </div>
     </div>
@@ -35,14 +34,13 @@
 <header class="header">
   <div class="container header-inner">
     <div class="logo">
-      <div class="logo-mark">G</div>
-      <div class="logo-text">GIJUN STORE</div>
+      <img src="logo.png" alt="Gijun Store Logo"/>
+      <span>GIJUN STORE</span>
     </div>
     <nav class="nav">
-      <a href="#about" data-i18n="nav_about"></a>
       <a href="#categories" data-i18n="nav_categories"></a>
-      <a href="#ankara" data-i18n="nav_ankara"></a>
-      <a href="#b2b" data-i18n="nav_b2b"></a>
+      <a href="#featured" data-i18n="nav_featured"></a>
+      <a href="#about" data-i18n="nav_about"></a>
       <a href="#contact" class="cta" data-i18n="nav_contact"></a>
     </nav>
   </div>
@@ -50,63 +48,65 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-main">
-      <span class="kicker" data-i18n="hero_kicker"></span>
-      <h1 data-i18n="hero_title"></h1>
-      <p data-i18n="hero_desc"></p>
+  <div class="container hero-inner">
+    <span class="kicker" data-i18n="hero_kicker"></span>
+    <h1 data-i18n="hero_title"></h1>
+    <p data-i18n="hero_desc"></p>
 
-      <div class="hero-actions">
-        <a href="#contact" class="btn primary" data-i18n="hero_cta1"></a>
-        <a href="#categories" class="btn secondary" data-i18n="hero_cta2"></a>
-        <button id="catalogBtn" class="btn ghost" data-i18n="hero_cta3"></button>
-      </div>
-
-      <div class="hero-pills">
-        <span data-i18n="pill_1"></span>
-        <span data-i18n="pill_2"></span>
-        <span data-i18n="pill_3"></span>
-      </div>
+    <div class="hero-actions">
+      <a href="#featured" class="btn gold" data-i18n="hero_cta1"></a>
+      <a href="#categories" class="btn outline" data-i18n="hero_cta2"></a>
     </div>
+  </div>
+</section>
 
-    <div class="hero-side">
-      <h3 data-i18n="side_title"></h3>
-      <ul>
-        <li><strong data-i18n="side_1_t"></strong><br><span data-i18n="side_1_d"></span></li>
-        <li><strong data-i18n="side_2_t"></strong><br><span data-i18n="side_2_d"></span></li>
-        <li><strong data-i18n="side_3_t"></strong><br><span data-i18n="side_3_d"></span></li>
-      </ul>
+<!-- HIGHLIGHTS -->
+<section class="highlights">
+  <div class="container highlight-grid">
+    <div><strong data-i18n="h1_t"></strong><span data-i18n="h1_d"></span></div>
+    <div><strong data-i18n="h2_t"></strong><span data-i18n="h2_d"></span></div>
+    <div><strong data-i18n="h3_t"></strong><span data-i18n="h3_d"></span></div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="section">
+  <div class="container">
+    <h2 data-i18n="cat_title"></h2>
+    <div class="category-grid">
+      <div class="cat-card">💧<span data-i18n="cat1"></span></div>
+      <div class="cat-card">💄<span data-i18n="cat2"></span></div>
+      <div class="cat-card">🧴<span data-i18n="cat3"></span></div>
+      <div class="cat-card">🧼<span data-i18n="cat4"></span></div>
+      <div class="cat-card">🎁<span data-i18n="cat5"></span></div>
+      <div class="cat-card">✈️<span data-i18n="cat6"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section id="featured" class="section dark">
+  <div class="container">
+    <h2 data-i18n="feat_title"></h2>
+    <div class="featured-grid">
+      <div class="product">✨<span data-i18n="feat1"></span></div>
+      <div class="product">🌍<span data-i18n="feat2"></span></div>
+      <div class="product">💎<span data-i18n="feat3"></span></div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-  <div class="container contact-grid">
-    <div class="card">
-      <h3 data-i18n="contact_title"></h3>
-      <p data-i18n="contact_desc"></p>
-      <p><strong>Email:</strong> gijunstore9@gmail.com</p>
-    </div>
-
-    <div class="card">
-      <h3 data-i18n="form_title"></h3>
-      <form id="contactForm">
-        <input name="name" data-i18n-placeholder="form_name" required />
-        <select name="type">
-          <option value="updates" data-i18n="form_opt1"></option>
-          <option value="product" data-i18n="form_opt2"></option>
-          <option value="b2b" data-i18n="form_opt3"></option>
-        </select>
-        <textarea name="message" data-i18n-placeholder="form_msg" required></textarea>
-        <button class="btn primary" data-i18n="form_send"></button>
-      </form>
-    </div>
+  <div class="container contact">
+    <h2 data-i18n="contact_title"></h2>
+    <p data-i18n="contact_desc"></p>
+    <p><strong>Email:</strong> gijunstore9@gmail.com</p>
   </div>
 </section>
 
 <footer class="footer">
-  © 2026 Gijun Store
+  © 2026 GIJUN STORE
 </footer>
 
 <script src="./app.js"></script>
